@@ -1,0 +1,11 @@
+android/mbds/tp1/guillaumet/neighbors/BuildConfig.java
+ android.mbds.tp1.guillaumet.neighbors.BuildConfig
+android/mbds/tp1/guillaumet/neighbors/dal/room/NeighborDataBase_Impl.java
+ android.mbds.tp1.guillaumet.neighbors.dal.room.NeighborDataBase_Impl
+ android.mbds.tp1.guillaumet.neighbors.dal.room.NeighborDataBase_Impl$1
+android/mbds/tp1/guillaumet/neighbors/dal/room/daos/NeighborDao_Impl.java
+ android.mbds.tp1.guillaumet.neighbors.dal.room.daos.NeighborDao_Impl
+ android.mbds.tp1.guillaumet.neighbors.dal.room.daos.NeighborDao_Impl$1
+ android.mbds.tp1.guillaumet.neighbors.dal.room.daos.NeighborDao_Impl$2
+ android.mbds.tp1.guillaumet.neighbors.dal.room.daos.NeighborDao_Impl$3
+ android.mbds.tp1.guillaumet.neighbors.dal.room.daos.NeighborDao_Impl$4

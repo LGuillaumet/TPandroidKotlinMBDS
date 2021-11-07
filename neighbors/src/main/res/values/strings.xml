@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Neighbors</string>
+    <string name="confirm">Confirm</string>
+
+    <string name="persistant" />
+    <string name="pas_persistan" />
+    <string name="Mémoire" />
+    <string name="Persistant" />
+</resources>
