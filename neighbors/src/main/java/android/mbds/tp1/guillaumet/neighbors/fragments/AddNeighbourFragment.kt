@@ -1,10 +1,9 @@
 package android.mbds.tp1.guillaumet.neighbors.fragments
 
-import android.app.Application
 import android.content.Context
 import android.mbds.tp1.guillaumet.neighbors.MainActivity
 import android.mbds.tp1.guillaumet.neighbors.R
-import android.mbds.tp1.guillaumet.neighbors.repositories.NeighborRepository
+import android.mbds.tp1.guillaumet.neighbors.data.NeighborRepository
 import android.mbds.tp1.guillaumet.neighbors.models.Neighbor
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,9 +12,14 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
+import androidx.core.widget.doAfterTextChanged
+import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import com.bumptech.glide.Glide
+import com.bumptech.glide.RequestBuilder
 import com.bumptech.glide.request.RequestOptions
 import com.google.android.material.textfield.TextInputLayout
 
@@ -34,14 +38,6 @@ class AddNeighbourFragment : Fragment() {
 
     private lateinit var telephoneLayout: TextInputLayout
     private lateinit var saveBtn: Button
-
-    private lateinit var repository: NeighborRepository
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        val application: Application = activity?.application ?: return
-
-        repository = NeighborRepository.getInstance(application)
-    }
 
     /**
      * Fonction permettant de définir une vue à attacher à un fragment
@@ -96,11 +92,10 @@ class AddNeighbourFragment : Fragment() {
             val aboutMe = aboutMeInput.text.toString()
             val webSite = websiteInput.text.toString()
             val favorite = false
-            //val id = NeighborRepository.getInstance(application).getNeighbours().value?.size ?: 1
-            val id = repository.getId()
+            val id = NeighborRepository.getInstance().getNeighbours().size + 1
 
             val neighbor = Neighbor(
-                id = id.toLong(),
+                id = id,
                 name = nom,
                 avatarUrl = avatarUrl,
                 address = address,
@@ -109,7 +104,8 @@ class AddNeighbourFragment : Fragment() {
                 favorite = favorite,
                 webSite = webSite
             )
-            repository.add(neighbor)
+
+            NeighborRepository.getInstance().createNeighbour(neighbor)
 
             (activity as? MainActivity)?.changeFragment(ListNeighborsFragment())
 

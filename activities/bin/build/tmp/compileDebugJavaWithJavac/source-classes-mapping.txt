@@ -1,2 +1,0 @@
-android/mbds/tp1/activities/BuildConfig.java
- android.mbds.tp1.activities.BuildConfig

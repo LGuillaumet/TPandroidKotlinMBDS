@@ -6,7 +6,7 @@ dependencyResolutionManagement {
         jcenter() // Warning: this repository is going to shut down soon
     }
 }
-rootProject.name = "AppTP4"
+rootProject.name = "AppTP1"
 include ':app'
 include ':activities'
 include ':neighbors'

@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/AppTP4.iml" filepath="$PROJECT_DIR$/.idea/AppTP4.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/activities/AppTP4.activities.iml" filepath="$PROJECT_DIR$/.idea/modules/activities/AppTP4.activities.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AppTP4.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AppTP4.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/neighbors/AppTP4.neighbors.iml" filepath="$PROJECT_DIR$/.idea/modules/neighbors/AppTP4.neighbors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AppTP1.iml" filepath="$PROJECT_DIR$/.idea/modules/AppTP1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/activities/AppTP1.activities.iml" filepath="$PROJECT_DIR$/.idea/modules/activities/AppTP1.activities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AppTP1.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AppTP1.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/neighbors/AppTP1.neighbors.iml" filepath="$PROJECT_DIR$/.idea/modules/neighbors/AppTP1.neighbors.iml" />
     </modules>
   </component>
 </project>
